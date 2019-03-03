@@ -1,14 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HelloWorld</title>
-  <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <app-root></app-root>
+<div class="navbar">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <a href="#home">Home</a>
+  <a href="#allmovies">All movies</a>
+  <a href="#popular">Popular</a>
+  <div class="dropdown">
+    <button class="dropbtn">By Category</button>
+    <div class="dropdown-content">
+      <a href="#">Drama</a>
+      <a href="#">Horror</a>
+      <a href="#">Comedy</a>
+      <a href="#">Detective</a>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>
+
